@@ -5,6 +5,10 @@
 	<artifactId>carshowroom</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
+	
+	<properties>
+		<spring.version>4.3.9.RELEASE</spring.version>
+	</properties>
 
 	<modules>
 		<module>carshowroom-web</module>
