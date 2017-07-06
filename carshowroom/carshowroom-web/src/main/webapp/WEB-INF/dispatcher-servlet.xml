@@ -7,6 +7,9 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<import resource = "classpath:applicationContext-orm.xml"/>
+
+
 	<!-- All previous MVC staff -->
 	<mvc:annotation-driven />
 
@@ -18,13 +21,7 @@
         <property name="prefix" value="/WEB-INF/pages/" />
         <property name="suffix" value=".jsp" />
     </bean>
-    <!-- /All previous MVC staff -->
 
-    <!-- ********************************************************* -->
-    <!-- All below configuration is necessary for the I18N support -->
-    <!-- ********************************************************* -->
-
-    <!-- Definition for I18N resources -->
     <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
         <property name="basenames">
             <list>

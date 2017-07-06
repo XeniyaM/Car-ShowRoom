@@ -32,6 +32,11 @@
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <dependency>
+        <groupId>com.training.java</groupId>
+        <artifactId>carshowroom-dao</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
 	</dependencies>
 	<build>
